@@ -1,13 +1,13 @@
-name: Jacky Zhao
+name: Thomas Breindl
 enableToc: true
 enableLinkPreview: true
 description:
-  Here is the page description. This is an example Quartz site that details installation,
-  setup, customization, and troubleshooting for Quartz itself.
+  This is Thomas "Aquitano" Breindl's Blog. Here I share my work and life.com
+  16 y/o | Self-taught Programmer | Ambitious developer | Student in Germany
 page_title:
-  "🪴 Quartz 3"
+  "Breindl Thomas | Blog"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
+    link: https://twitter.com/BreindlThomas
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/Aquitano/
