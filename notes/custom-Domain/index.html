@@ -1,8 +1,8 @@
 <!doctype html><html lang=en>
 <head>
 <meta charset=utf-8>
-<meta name=description content>
-<title>Categories</title>
+<meta name=description content="Registrar This step is only applicable if you are using a custom domain! If you are using a <YOUR-USERNAME>.github.io domain, you can skip this step.">
+<title>Custom Domain</title>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" type=image/png href=https://aquitano.github.io/Blog//icon.png>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
@@ -39,35 +39,65 @@
 </div>
 </header>
 <article>
-<h1>All Categories</h1>
-<div class=tags>
-<div class=meta>
-<h1><a href=https://aquitano.github.io/Blog/tags/setup/>setup</a></h1>
-<p><b>5</b> notes with this tag (showing first 2 results)</p>
-</div>
-<ul class=section-ul><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://aquitano.github.io/Blog/notes/setup/>Setup</a></h3>
-<p>Making your own Quartz Setting up Quartz requires a basic understanding of git. If you are unfamiliar, this resource is a great place to start!...</p>
-</div>
+<h1>Custom Domain</h1>
 <p class=meta>
-2 minute read. Last updated April 4, 2022
+Last updated April 4, 2022
 </p>
-</div>
-</li><li class=section-li>
-<div class=section>
-<div class=desc>
-<h3><a href=https://aquitano.github.io/Blog/notes/obsidian/>Obsidian Vault Integration</a></h3>
-<p>Setup Obsidian is the preferred way to use Quartz. You can either create a new Obsidian Vault or link one that your already have....</p>
-</div>
-<p class=meta>
-2 minute read. Last updated April 4, 2022
-</p>
-</div>
-</li></ul>
-</div>
+<ul class=tags>
+</ul>
+<aside class=mainTOC>
+<h3>Table of Contents</h3>
+<nav id=TableOfContents>
+<ol>
+<li>
+<ol>
+<li><a href=#registrar>Registrar</a></li>
+</ol>
+</li>
+</ol>
+</nav>
+</aside>
+<h3 id=registrar>Registrar</h3>
+<p>This step is only applicable if you are using a <strong>custom domain</strong>! If you are using a <code>&lt;YOUR-USERNAME>.github.io</code> domain, you can skip this step.</p>
+<p>For this last bit to take effect, you also need to create a CNAME record with the DNS provider you register your domain with (i.e. NameCheap, Google Domains).</p>
+<p>GitHub has some
+<a href=https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site rel=noopener>documentation on this</a>, but the tldr; is to</p>
+<ol>
+<li>
+<p>Go to your forked repository (<code>github.com/&lt;YOUR-GITHUB-USERNAME>/quartz</code>) settings page and go to the Pages tab. Under &ldquo;Custom domain&rdquo;, type your custom domain, then click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Go to your DNS Provider and create a CNAME record that points from your domain to <code>&lt;YOUR-GITHUB-USERNAME.github.io.</code> (yes, with the trailing period).</p>
+<p>
+<img src=/notes/images/google-domains.png alt="Example Configuration for Quartz"><em>Example Configuration for Quartz</em></p>
+</li>
+<li>
+<p>Wait 30 minutes to an hour for the network changes to kick in.</p>
+</li>
+<li>
+<p>Done!</p>
+</li>
+</ol>
 </article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/Blog/notes/hosting>Deploying Quartz to the Web</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://aquitano.github.io/Blog/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://aquitano.github.io/Blog/notes/custom-Domain","https://aquitano.github.io/Blog",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
 <div id=contact_buttons>
 <footer>
 <p>Made by Thomas Breindl using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
@@ -76,8 +106,8 @@
 <li><a href=https://twitter.com/BreindlThomas>Twitter</a></li><li><a href=https://github.com/Aquitano/>Github</a></li></ul>
 </footer>
 </div>
-</div>
 <script src=https://aquitano.github.io/Blog/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
 <script>initPopover("https://aquitano.github.io/Blog")</script>
+</div>
 </body>
 </html>
