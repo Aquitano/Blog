@@ -1,14 +1,14 @@
-name: Jacky Zhao
+name: Thomas Breindl
 enableToc: true
 enableLinkPreview: true
 enableLatex: true
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  This is Thomas "Aquitano" Breindl's Blog. Here I share my work and life.com
+  16 y/o | Self-taught Programmer | Ambitious developer | Student in Germany
 page_title:
-  "🪴 Quartz 3.2"
+  "Breindl Thomas | Blog"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
+    link: https://twitter.com/BreindlThomas
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/Aquitano/
