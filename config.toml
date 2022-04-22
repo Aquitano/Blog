@@ -1,6 +1,6 @@
-baseURL = "https://aquitano.github.io/Blog/"
+baseURL = "https://blog.aquitano.ga/"
 languageCode = "en-us"
-googleAnalytics = "G-XYFD95KB4J"
+googleAnalytics = ""
 pygmentsUseClasses = true
 relativeURLs = false
 disablePathToLower = true

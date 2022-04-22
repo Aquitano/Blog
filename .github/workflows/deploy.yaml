@@ -6,7 +6,8 @@ on:
       - hugo
 
 jobs:
-  generate:
+  generation:
+    name: 💾 Generation
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -28,17 +29,17 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: master  # deploying branch
-          cname: quartz.jzhao.xyz
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./public
+      #     publish_branch: master  # deploying branch
+      #     cname: quartz.jzhao.xyz
 
   web-deploy:
     name: 🎉 Deploy
-    needs: generate
+    needs: generation
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
